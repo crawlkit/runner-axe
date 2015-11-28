@@ -1,6 +1,6 @@
 {
   "name": "crawlkit-runner-axe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CrawlKit runner for auditing a website with aXe",
   "main": "src/index.js",
   "scripts": {
