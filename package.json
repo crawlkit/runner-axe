@@ -1,0 +1,49 @@
+{
+  "name": "crawlkit-runner-axe",
+  "version": "1.0.0",
+  "description": "A CrawlKit runner for auditing a website with aXe",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint .",
+    "tdd": "mocha --watch --reporter min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/crawlkit/runner-axe.git"
+  },
+  "keywords": [
+    "crawlkit",
+    "a11y",
+    "accessibility",
+    "aXe"
+  ],
+  "author": "Joscha Feth <joscha@feth.com>",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "bugs": {
+    "url": "https://github.com/crawlkit/runner-axe/issues"
+  },
+  "homepage": "https://github.com/crawlkit/runner-axe#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.1.0",
+    "crawlkit": "^1.4.2",
+    "eslint": "^1.10.2",
+    "eslint-config-airbnb": "^1.0.2",
+    "freeport": "^1.0.5",
+    "http-server": "^0.8.5",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "axe-core": "^1.1.1"
+  },
+  "peerDependencies": {
+    "crawlkit": ">= 1.4.0"
+  },
+  "engines": {
+    "node": ">=4.2"
+  }
+}
