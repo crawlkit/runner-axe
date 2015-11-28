@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const CrawlKit = require('crawlkit');
 const AxeRunner = require('crawlkit-runner-axe');
 
