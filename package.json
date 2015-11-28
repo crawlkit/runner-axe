@@ -21,7 +21,8 @@
   "author": "Joscha Feth <joscha@feth.com>",
   "license": "MIT",
   "files": [
-    "src"
+    "src",
+    "examples/tonic.js"
   ],
   "bugs": {
     "url": "https://github.com/crawlkit/runner-axe/issues"
@@ -45,5 +46,6 @@
   },
   "engines": {
     "node": ">=4.2"
-  }
+  },
+  "tonicExampleFilename": "examples/tonic.js"
 }
