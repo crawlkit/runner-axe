@@ -5,7 +5,7 @@
 [![David](https://img.shields.io/david/crawlkit/runner-axe.svg)]()
 [![node](https://img.shields.io/node/v/crawlkit-runner-axe.svg)]()
 
-This runner can be used with [CrawlKit](https://github.com/crawlkit/crawlkit) in order to audit a website with the [aXe](https://github.com/dequelabs/axe-core).
+This runner can be used with [CrawlKit](https://github.com/crawlkit/crawlkit) in order to audit a website with the [aXe](https://github.com/dequelabs/axe-core) accessibility engine.
 
 ## Install
 ```console
