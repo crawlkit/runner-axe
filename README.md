@@ -24,7 +24,7 @@ crawler.addRunner('aXe', new AxeRunner());
 crawler.crawl()
     .then((data) => {
         console.log(JSON.stringify(data.results, true, 2));
-    });
+    }, (err) => console.error(err));
 ```
 
 ## Configuring the aXe runner
