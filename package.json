@@ -34,6 +34,7 @@
     "crawlkit": "^1.4.2",
     "eslint": "^1.10.2",
     "eslint-config-airbnb": "^2.1.1",
+    "eslint-plugin-mocha": "^1.1.0",
     "freeport": "^1.0.5",
     "http-server": "^0.8.5",
     "mocha": "^2.3.4"
