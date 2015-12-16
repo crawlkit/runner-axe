@@ -49,7 +49,7 @@ describe('Axe runner', function main() {
                 },
             },
         };
-        return crawler.crawl().should.eventually.deep.equal({results});
+        return crawler.crawl().should.eventually.deep.equal({ results });
     });
 
     it('should be possible to pass options to the runner', () => {
@@ -69,7 +69,7 @@ describe('Axe runner', function main() {
                 },
             },
         };
-        return crawler.crawl().should.eventually.deep.equal({results});
+        return crawler.crawl().should.eventually.deep.equal({ results });
     });
 
     it('should be possible to set the context', () => {
@@ -85,6 +85,6 @@ describe('Axe runner', function main() {
                 },
             },
         };
-        return crawler.crawl().should.eventually.deep.equal({results});
+        return crawler.crawl().should.eventually.deep.equal({ results });
     });
 });
