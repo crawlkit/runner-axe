@@ -30,7 +30,7 @@
   "homepage": "https://github.com/crawlkit/runner-axe#readme",
   "devDependencies": {
     "chai": "^3.4.1",
-    "chai-as-promised": "^5.1.0",
+    "chai-as-promised": "^5.2.0",
     "crawlkit": "^1.4.2",
     "eslint": "^1.10.2",
     "eslint-config-airbnb": "^2.1.1",
