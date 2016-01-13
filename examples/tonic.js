@@ -6,6 +6,6 @@ const crawler = new CrawlKit('http://www.google.com');
 crawler.addRunner('aXe', new AxeRunner());
 
 crawler.crawl()
-    .then((data) => {
-        console.log(JSON.stringify(data.results, true, 2));
-    });
+  .then((data) => {
+    console.log(JSON.stringify(data.results, true, 2));
+  }, (err) => console.error(err));
