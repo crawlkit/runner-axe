@@ -11,9 +11,10 @@ class AxeRunner {
   /* global axe:false */
   getRunnable() {
     return function axeRunner(options, context) {
-      axe.a11yCheck(context || document, options || {}, function axeResults(results) {
+      function axeResults(results) {
         window.callPhantom(null, results.violations);
-      });
+      }
+      axe.a11yCheck(context || document, options || {}, axeResults);
     };
   }
 }
