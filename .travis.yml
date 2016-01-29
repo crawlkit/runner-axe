@@ -1,9 +1,27 @@
+sudo: false
 language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
 node_js:
-  - "4.2"
-  - "stable"
+  - '4'
+  - 'stable'
 script:
   - npm run lint
   - npm test
   - npm link --silent && npm link crawlkit-runner-axe --silent
   - for f in examples/*.js; do echo "• running '$f'" && travis_retry node $f > /dev/null; done
+before_install:
+  - npm i -g npm@^2.0.0
+before_script:
+  - npm prune
+after_success:
+  - 'curl -Lo travis_after_all.py https://git.io/travis_after_all'
+  - python travis_after_all.py
+  - 'export $(cat .to_export_back) &> /dev/null'
+  - npm run semantic-release
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
