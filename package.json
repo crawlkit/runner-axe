@@ -6,6 +6,7 @@
     "test": "mocha",
     "lint": "eslint .",
     "tdd": "mocha --watch --reporter min",
+    "postinstall": "validate-commit-msg",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -39,7 +40,8 @@
     "freeport": "^1.0.5",
     "http-server": "^0.8.5",
     "mocha": "^2.3.4",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "validate-commit-message": "^3.0.1"
   },
   "dependencies": {
     "axe-core": "^1.1.1"
