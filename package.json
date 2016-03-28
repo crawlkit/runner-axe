@@ -34,7 +34,7 @@
     "chai-as-promised": "^5.2.0",
     "crawlkit": "^2.0.0",
     "cz-conventional-changelog": "^1.1.5",
-    "eslint": "^1.10.3",
+    "eslint": "^2.5.2",
     "eslint-config-airbnb": "^5.0.1",
     "eslint-plugin-mocha": "^1.1.0",
     "freeport": "^1.0.5",
