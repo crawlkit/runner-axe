@@ -1,33 +1,33 @@
 [
-{
-  "description": "Ensures every HTML document has a lang attribute and its value is valid",
-  "help": "<html> element must have a valid lang attribute",
-  "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/html-lang",
-  "id": "html-lang",
-  "impact": "serious",
-  "nodes": [
-    {
-      "all": [],
-      "any": [
-        {
-          "data": "",
-          "id": "has-lang",
-          "impact": "serious",
-          "message": "The <html> element does not have a lang attribute",
-          "relatedNodes": []
-        }
-      ],
-      "html": "<html><head></head><body><a href=\"\" onclick=\"window.location.href = 'http://www.google.com';\">no href</a>\n\n</body></html>",
-      "impact": "serious",
-      "none": [],
-      "target": [
-        "html"
-      ]
-    }
-  ],
-  "tags": [
-    "wcag2a",
-    "wcag311"
-  ]
-}
+  {
+    "description": "Ensures every HTML document has a lang attribute",
+    "help": "<html> element must have a lang attribute",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/2.1/html-has-lang?application=axeAPI",
+    "id": "html-has-lang",
+    "impact": "serious",
+    "nodes": [
+      {
+        "all": [],
+        "any": [
+          {
+            "data": "",
+            "id": "has-lang",
+            "impact": "serious",
+            "message": "The <html> element does not have a lang attribute",
+            "relatedNodes": []
+          }
+        ],
+        "html": "<html><head></head><body><a href=\"\" onclick=\"window.location.href = 'http://www.google.com';\">no href</a>\n\n</body></html>",
+        "impact": "serious",
+        "none": [],
+        "target": [
+          "html"
+        ]
+      }
+    ],
+    "tags": [
+      "wcag2a",
+      "wcag311"
+    ]
+  }
 ]

@@ -59,7 +59,7 @@ describe('Axe runner', function main() {
     crawler.addRunner('axe', new AxeRunner(), {
       runOnly: {
         type: 'rule',
-        values: ['html-lang'],
+        values: ['html-has-lang'],
       },
     });
 
