@@ -6,7 +6,7 @@
     "test": "mocha",
     "lint": "eslint .",
     "tdd": "mocha --watch --reporter min",
-    "postinstall": "validate-commit-msg",
+    "pretest": "validate-commit-msg",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
