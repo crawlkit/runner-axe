@@ -41,7 +41,7 @@ crawler.addRunner('aXe', new AxeRunner(), {
     }
 });
 ```
-For a list of options and the structure of the options object, please consult the [aXe API](https://github.com/dequelabs/axe-core/blob/master/doc/API.md#a11ycheck-parameters).
+For a list of options and the structure of the options object, please consult the [aXe API](https://github.com/dequelabs/axe-core/blob/master/doc/API.md#options-parameter).
 
 ### Defining context
 You can define the context the aXe runner should use like this:
@@ -49,5 +49,17 @@ You can define the context the aXe runner should use like this:
 crawler.addRunner('aXe', new AxeRunner(), null, '.my-context');
 ```
 By default, the context is `document`. Please bear in mind that only selector contexts work, as the code of the aXe runner itself runs in node.
+
+### Passing configuration
+You can pass an configuration object to the aXe runner like this:
+```javascript
+crawler.addRunner('aXe', new AxeRunner(), null, null, {
+  rules: [
+  	{ id: 'color-contrast', enabled: false }
+  ]
+});
+```
+For a list of configuration options and the structure of the configuration object, please consult the [aXe API](https://github.com/dequelabs/axe-core/blob/master/doc/API.md#api-name-axeconfigure).
+
 
 This project is in no way affiliated with Deque Labs.
