@@ -10,9 +10,13 @@ class AxeRunner {
 
   /* global axe:false */
   getRunnable() {
-    return function axeRunner(options, context) {
+    return function axeRunner(options, context, config) {
       function axeResults(results) {
         window.callPhantom(null, results.violations);
+      }
+
+      if (config) {
+        axe.configure(config);
       }
       axe.a11yCheck(context || document, options || {}, axeResults);
     };
