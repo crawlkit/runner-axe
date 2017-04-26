@@ -38,7 +38,7 @@
     "eslint-config-airbnb": "^7.0.0",
     "eslint-plugin-jsx-a11y": "^0.6.2",
     "eslint-plugin-mocha": "^3.0.0",
-    "eslint-plugin-react": "^4.3.0",
+    "eslint-plugin-react": "^5.2.2",
     "freeport": "^1.0.5",
     "http-server": "^0.9.0",
     "mocha": "^3.3.0",
