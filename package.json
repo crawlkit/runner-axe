@@ -46,7 +46,7 @@
     "validate-commit-message": "^3.0.1"
   },
   "dependencies": {
-    "axe-core": "^2.1.7"
+    "axe-core": "^2.2.2"
   },
   "peerDependencies": {
     "crawlkit": ">= 1.4.0"
